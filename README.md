@@ -2,4 +2,4 @@
 
 Website for MillCreek Research & Development.
 
-[gmorgachev.github.io/millcreek-website](https://gmorgachev.github.io/millcreek-website/)
+[millcreek.dev](https://millcreek.dev/)

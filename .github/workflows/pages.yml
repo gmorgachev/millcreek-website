@@ -3,6 +3,12 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - index.html
+      - styles.css
+      - fonts/**
+      - logo/**
+      - .github/workflows/pages.yml
   workflow_dispatch:
 
 permissions:
@@ -26,7 +32,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html styles.css .nojekyll _site/
+          cp index.html styles.css _site/
           cp -R fonts logo _site/
       - uses: actions/upload-pages-artifact@v3
         with:
